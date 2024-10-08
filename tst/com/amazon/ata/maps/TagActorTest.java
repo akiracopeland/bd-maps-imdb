@@ -19,7 +19,7 @@ public class TagActorTest extends ImdbTest {
         imdb.releaseMovie(SHAWSHANK, cast);
 
         // WHEN
-        imdb.tagActorInMovie(SHAWSHANK_COPY, WILLIAM_SADLER);
+        imdb.tagActorInMovie(SHAWSHANK, WILLIAM_SADLER);
 
         // THEN
         Set<Actor> resultsCast = imdb.getActorsInMovie(SHAWSHANK);
